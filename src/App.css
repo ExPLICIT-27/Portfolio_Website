@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*NavBar*/
+.navbar{
+  display: flex;
+  color: #fff;
+  margin-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar .logo{
+  position: relative;
+  left: 60px;
+  top: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  z-index: 1;
+  box-shadow: 0 6px 20px rgba(33, 147, 176, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar .logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(33, 147, 176, 0.4);
+}
+
+.navbar .logo .logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.navbar .logo .logo-dot {
+  margin: 0 2px;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0.8;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.navbar .nav-items{
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-items a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .nav-items a.active {
+  font-size: 1.2em;
+  z-index: 1;
+  text-shadow: 
+    1px 1px 2px rgba(255, 255, 255, 0.2),
+    2px 2px 5px rgba(255, 255, 255, 0.3),
+    3px 3px 10px rgba(255, 255, 255, 0.4),
+    4px 4px 15px rgba(255, 255, 255, 0.5);
+}
+/*Home*/
+.Home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+.Home .WelcomeText{
+  height: 80px;
+  margin-top: 50px;
+  width: 100%;
+  font-size: 2em;
+  color: #fff;
+  z-index: 1;
+  text-shadow: 
+    1px 1px 2px rgba(255, 255, 255, 0.2),
+    2px 2px 5px rgba(255, 255, 255, 0.3),
+    3px 3px 10px rgba(255, 255, 255, 0.4),
+    4px 4px 15px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.Home .nameAndDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.Home .nameAndDetails .myName {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 3.5em;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 20px rgba(33, 147, 176, 0.2);
+  letter-spacing: -1px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.Home .nameAndDetails .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  font-size: 1em;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.Home .nameAndDetails .details span {
+  position: relative;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Home .nameAndDetails .details span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.Home .nameAndDetails .details span:hover {
+  color: #fff;
+  border-color: transparent;
+  background: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
+}
+
+.Home .nameAndDetails .details span:hover::before {
+  transform: translateX(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*About styles*/
+.About {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-Box {
+  width: 80%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
