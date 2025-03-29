@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 export const Home = () => {
   const [currText, changeText] = useState("");
   const [Isdeleting, setdeleting] = useState(false);
-  const [rate, setRate] = useState(400);
+  const [rate, setRate] = useState(300);
   const fullText = "Hello There :)";
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,7 +15,7 @@ export const Home = () => {
       }
       if (Isdeleting && currText === "") {
         setdeleting(false);
-        setRate(400);
+        setRate(300);
       }
       if (Isdeleting) {
         setRate((currRate) => currRate / 2);
