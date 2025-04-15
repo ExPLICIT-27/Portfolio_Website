@@ -3,6 +3,7 @@ import { Navbar } from "./Components/Navbar.jsx";
 import { Home } from "./Components/Home.jsx";
 import { About } from "./Components/About.jsx";
 import { Skills } from "./Components/Skills.jsx";
+import { Projects } from "./Components/Projects.jsx";
 function App() {
   return (
     <div className="mainSection">
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }
