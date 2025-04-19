@@ -4,6 +4,7 @@ import { Home } from "./Components/Home.jsx";
 import { About } from "./Components/About.jsx";
 import { Skills } from "./Components/Skills.jsx";
 import { Projects } from "./Components/Projects.jsx";
+import { ContactDetails } from "./Components/ContactDetails.jsx";
 function App() {
   return (
     <div className="mainSection">
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <ContactDetails />
     </div>
   );
 }

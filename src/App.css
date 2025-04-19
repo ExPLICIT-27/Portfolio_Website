@@ -480,3 +480,118 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
 }
+
+/* Contact styles */
+.Contact {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container {
+  width: 80%;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.contact-icon {
+  color: #6dd5ed;
+  font-size: 1.5em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 2em;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--hover-color);
+  transform: translateY(-5px);
+  filter: drop-shadow(0 0 8px var(--hover-color));
+}
+
+.coding-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.coding-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.coding-profile:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
+}
+
+.profile-icon {
+  font-size: 2em;
+  color: #6dd5ed;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-name {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.platform-stats {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
