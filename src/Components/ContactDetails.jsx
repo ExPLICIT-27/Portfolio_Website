@@ -6,8 +6,34 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { SiLeetcode, SiCodechef } from "react-icons/si";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const ContactDetails = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_55o7nlk", 
+        "template_nb36qpm", 
+        form.current,
+        "SlYxVt9YWoSFpxLWG" 
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send the message. Please try again.");
+          console.error(error.text);
+        }
+      );
+  };
+
   const contacts = {
     phone: "+91 7306788989",
     email: "nandumahesh2004@gmail.com",
@@ -21,13 +47,13 @@ export const ContactDetails = () => {
       {
         name: "LinkedIn",
         icon: <FaLinkedin />,
-        link: "https://linkedin.com/in/yourusername",
+        link: "https://www.linkedin.com/in/nandumahesh/",
         color: "#0077b5",
       },
       {
         name: "Instagram",
         icon: <FaInstagram />,
-        link: "https://instagram.com/yourusername",
+        link: "https://instagram.com/_paysam________",
         color: "#e4405f",
       },
     ],
@@ -36,13 +62,13 @@ export const ContactDetails = () => {
         name: "LeetCode",
         icon: <SiLeetcode />,
         link: "https://leetcode.com/u/ExPLICIT_27/",
-        stats: "300+ Problems",
+        stats: "450+ Problems",
       },
       {
         name: "CodeChef",
         icon: <SiCodechef />,
         link: "https://www.codechef.com/users/explicit_27",
-        stats: "1480+ Rating",
+        stats: "1500+ Rating",
       },
     ],
   };
@@ -93,6 +119,17 @@ export const ContactDetails = () => {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* EmailJS Form */}
+        <div className="email-form">
+          <h3 className="form-title">Send Me a Message</h3>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required />
+            <button type="submit" className="form-button">Send</button>
+          </form>
         </div>
       </div>
     </section>

@@ -36,9 +36,16 @@ export const Home = () => {
         <span className="myName">Nandu Mahesh</span>
         <div className="details">
           <span>Competitive Programming Enthusiast</span>
-          <span>Web Development</span>
+          <span>Machine Learning</span>
           <span>Algorithm Analysis and Development</span>
         </div>
+          <a
+          href="https://drive.google.com/file/d/1M_mkRAXtFupTDbawpfEMKNAEweGRkWRP/view?usp=drive_link"
+          download
+          className="resume-download"
+          >
+          Download Resume
+          </a>
       </div>
     </section>
   );

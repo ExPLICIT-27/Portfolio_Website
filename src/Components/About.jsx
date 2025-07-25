@@ -11,22 +11,22 @@ export const About = () => {
             problem-solving skills and algorithmic thinking.
           </p>
           <p className="about-text">
-            Currently, I'm focusing on web development and system design, always
-            looking to learn new technologies and best practices. I believe in
-            writing clean, maintainable code and creating user-friendly
-            applications. I have developed significant interest in Artificial
+            I have developed significant interest in Artificial
             Intelligence and Machine Learning and hope to make significant
-            progress in the same over the next few months.
+            progress in the same over the next few months. I have completed 
+            and received certifications for supervised learning, advanced learning 
+            algorithms and unsupervised learning and intend to utilize my newly 
+            acquired knowledge to build scalable applications.
           </p>
           <div className="highlight-box">
             <div className="highlight-item">
-              <span className="highlight-number">300+</span>
+              <span className="highlight-number">450+</span>
               <span className="highlight-label">
                 Problems Solved (Leetcode)
               </span>
             </div>
             <div className="highlight-item">
-              <span className="highlight-number">1480+</span>
+              <span className="highlight-number">1500+</span>
               <span className="highlight-label">Rating (CodeChef)</span>
             </div>
           </div>

@@ -36,6 +36,14 @@ export const Skills = () => {
       name: "Java",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     },
+    {
+      name: "PyTorch",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+    },
+    {
+      name: "Tensorflow",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    }
   ];
 
   return (

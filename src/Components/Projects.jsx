@@ -2,6 +2,7 @@ import { useState } from "react";
 import noteFinderImg from "../assets/Images/NoteFinderImg.png";
 import antivirusImg from "../assets/Images/antivirusImg.jpg";
 import imageEncImg from "../assets/Images/imageEnc.png";
+import flowerModel from "../assets/Images/flowerModel.png";
 
 export const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -28,8 +29,16 @@ export const Projects = () => {
       title: "Image Encryptor Software",
       description:
         "Image Encryption software using Arnold's Cat Map algorithm with enhancements using divide and conquer techniques.",
-      technologies: ["C++", "Python"],
+      technologies: ["C++", "Python", "tkinter"],
       image: imageEncImg,
+      link: "https://github.com/ExPLICIT-27/Image-Encryption",
+    },
+    {
+      title: "Flower Classification Model",
+      description:
+        "Flower Classification model built for a deeper understanding of Convolutional Neural Networks.",
+      technologies: ["PyTorch", "Python", "scikit-learn"],
+      image: flowerModel,
       link: "https://github.com/ExPLICIT-27/Image-Encryption",
     },
   ];
