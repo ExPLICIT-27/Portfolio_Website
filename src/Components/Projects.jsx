@@ -39,7 +39,7 @@ export const Projects = () => {
         "Flower Classification model built for a deeper understanding of Convolutional Neural Networks.",
       technologies: ["PyTorch", "Python", "scikit-learn"],
       image: flowerModel,
-      link: "https://github.com/ExPLICIT-27/Image-Encryption",
+      link: "https://github.com/ExPLICIT-27/Flower_Classification_Model",
     },
   ];
 
